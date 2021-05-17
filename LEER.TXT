@@ -2,7 +2,8 @@
 CURSO GIT BASICO 
 ::::::::::::::::::::
 
-URL DEL CURSO: https://www.youtube.com/watch?v=HiXLkL42tMU
+VIDEO DEL CURSO:
+https://www.youtube.com/watch?v=HiXLkL42tMU
 
 NOTAS:
 Podemos crear un archivo llamado ".gitignore" para que cuando guardemos los cambios en el repositorio, se ignores ciertos archivos. Simplemente en ese gitignore agregamos los nombres de los archivos con su extensión.
@@ -17,5 +18,7 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git commit: agrega un snapshot o imagen con los cambios hasta ese momento, con la fecha, etc.
 Tambien se puede usar "git commit -m 'NombreDelCommit' " para asignarle un identificador directamente.
 -git branch "nombre": creamos una nueva "rama", donde podemos agregar archivos y cambios que solo estaran en esta rama, y no en la master u otras ramas que vayamos creando. subcomandos serian: "git branch rama1" para crear nueva rama. "git branch" para listar ramas. "git checkout nombreDeRama" para ir a una rama.
--subimos a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git"
+-subimos a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git" luego "git push -u origin master" donde master es la rama o branch seleccionada.
+-git clone "ruta": para clonar algun repositorio.
+
 
