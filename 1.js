@@ -4,3 +4,4 @@ const funcion = (msg)=>{
     console.log(msg)
 }
 
+funcion()
