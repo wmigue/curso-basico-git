@@ -1,7 +1,8 @@
 
 const funcion = (msg)=>{
     if(msg) nombre = prompt(msg)
-    console.log(msg)
+    else nombre = prompt("introduce tu nombre")
+    console.log(nombre)
 }
 
 funcion()
