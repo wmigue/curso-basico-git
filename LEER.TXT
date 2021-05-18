@@ -20,5 +20,5 @@ Tambien se puede usar "git commit -m 'NombreDelCommit' " para asignarle un ident
 -git branch "nombre": creamos una nueva "rama", donde podemos agregar archivos y cambios que solo estaran en esta rama, y no en la master u otras ramas que vayamos creando. subcomandos serian: "git branch rama1" para crear nueva rama. "git branch" para listar ramas. "git checkout nombreDeRama" para ir a una rama.
 -subimos a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git" luego "git push -u origin master" donde master es la rama o branch seleccionada.
 -git clone "ruta": para clonar algun repositorio.
-
+-git reset "hashDelCommit" --hard: sirve para eliminar commits posteriores a el indicado. Luego es necesario borrar el historial de github con: git push -f origin master.
 
