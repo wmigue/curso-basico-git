@@ -29,3 +29,5 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git reset "hashDelCommit" --hard: sirve para eliminar commits posteriores a el indicado. 
     Luego es necesario borrar el historial de github con: git push -f origin master.
 -CUANDO NO FUNCIONA EL .gitignore hacer: git rm -r --cached . 
+-cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
+ git push -f origin master
