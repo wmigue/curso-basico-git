@@ -20,6 +20,8 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -para crear nueva rama: "git branch rama1" 
 -listar ramas: "git branch" 
 -para moverse a una rama: "git checkout nombreDeRama" .
+-git branch -d "nombre": para eliminar una rama.
+-git push origin --delete <NombreRama>: eliminar rama remota.
 -vinculamos proyecto a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git"
 -subimos proyecto a determinada rama: "git push --set-upstream origin master" donde master es la rama o branch seleccionada.
 -git clone "ruta": para clonar algun repositorio.
@@ -31,4 +33,4 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
     git checkout xxx
     git merge master: trae los commits de "master".
     git pull: te queda tu rama xxx como copia exacta de master. (usar -f para forzar en caso de error.)
-      
+
