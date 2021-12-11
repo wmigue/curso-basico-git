@@ -27,9 +27,9 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git clone "ruta": para clonar algun repositorio.
 -git reset "hashDelCommit" --hard: sirve para eliminar commits posteriores a el indicado. 
     Luego es necesario borrar el historial de github con: git push -f origin master.
--CUANDO NO FUNCIONA EL .gitignore hacer: git rm -r --cached . 
-- git push -f origin master: cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
-- Para actualizar tu rama "xxx" con contenido de la rama "master", te situas en la rama "xxx":
+-CUANDO NO FUNCIONA EL .gitignore hacer:  git rm -f --cached "nombre de archivo que no cambia"
+-git push -f origin master: cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
+-Para actualizar tu rama "xxx" con contenido de la rama "master", te situas en la rama "xxx":
     git checkout xxx
     git merge master: trae los commits de "master".
     git pull: te queda tu rama xxx como copia exacta de master. (usar -f para forzar en caso de error.)
