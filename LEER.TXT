@@ -2,9 +2,6 @@
 CURSO GIT BASICO 
 ::::::::::::::::::::
 
-VIDEO DEL CURSO:
-
-
 NOTAS:
 Podemos crear un archivo llamado ".gitignore" para que cuando guardemos los cambios en el repositorio, se ignores ciertos archivos. 
 Simplemente en ese gitignore agregamos los nombres de los archivos con su extensión.
@@ -29,5 +26,9 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git reset "hashDelCommit" --hard: sirve para eliminar commits posteriores a el indicado. 
     Luego es necesario borrar el historial de github con: git push -f origin master.
 -CUANDO NO FUNCIONA EL .gitignore hacer: git rm -r --cached . 
--cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
- git push -f origin master
+- git push -f origin master: cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
+- Para actualizar tu rama "xxx" con contenido de la rama "master", te situas en la rama "xxx":
+    git checkout xxx
+    git merge master: trae los commits de "master".
+    git pull: te queda tu rama xxx como copia exacta de master. (usar -f para forzar en caso de error.)
+      
