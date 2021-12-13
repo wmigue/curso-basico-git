@@ -22,12 +22,10 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -para moverse a una rama: "git checkout nombreDeRama" .
 -git branch -d "nombre": para eliminar una rama.
 -git push origin --delete <NombreRama>: eliminar rama remota.
--git reset HEAD: eliminar solo el ultimo commit.
-
 -vinculamos proyecto a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git"
 -subimos proyecto a determinada rama: "git push --set-upstream origin master" donde master es la rama o branch seleccionada.
 -git clone "ruta": para clonar algun repositorio.
--git reset "hashDelCommit" --hard: sirve para eliminar commits posteriores a el indicado. 
+-git reset --hard HEAD~3 : sirve para eliminar en este caso los ultimos 3 commits. luego con "git push --force" forzamos la actualizacion en github.
     Luego es necesario borrar el historial de github con: git push -f origin master.
 -CUANDO NO FUNCIONA EL .gitignore hacer:  git rm -f --cached "nombre de archivo que no cambia"
 -git push -f origin master: cuando tenemos el problema -> hint: Updates were rejected because the remote contains work that you do
