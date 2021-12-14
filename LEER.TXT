@@ -36,3 +36,8 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -para clonar solo una RAMA(single-branch) y una CANTIDAD(depth) de commits a partir del ultimo generado:
     git clone -b master --single-branch https://github.com/wmigue/socket.io-express.js --depth 1
 -para moverse a un determinado commit: git checkout "hash" y para volver al head(ultimo commit): git switch - 
+-git stash save "nombre" : guarda un estado para poder cambiar entre ramas sin tener que hacer un commit o postergarlo.
+-git stash drop stash@{0} : eliminando un stash, en este caso el 0.
+-git stash list : listando stashes.
+-git stash pop stash@{0} : aplica los cambio y elimina los archivos del stash.
+-git stash apply stash@{0} : aplica los cambios y deja una copia en el stash.
