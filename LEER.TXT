@@ -21,6 +21,7 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -listar ramas: "git branch" 
 -para moverse a una rama: "git checkout nombreDeRama" .
 -git branch -d "nombre": para eliminar una rama.
+-git push -u origin master : creamos la rama "MASTER" y subimos a esa rama los cambios.
 -git push origin --delete <NombreRama>: eliminar rama remota.
 -vinculamos proyecto a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git"
 -subimos proyecto a determinada rama: "git push --set-upstream origin master" donde master es la rama o branch seleccionada.
