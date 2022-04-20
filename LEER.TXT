@@ -23,8 +23,12 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git branch -d "nombre": para eliminar una rama.
 -git push -u origin master : creamos la rama "MASTER" y subimos a esa rama los cambios.
 -git push origin --delete <NombreRama>: eliminar rama remota.
+-git push origin <nombre de la rama> : subir proyecto a determinada rama.
 -vinculamos proyecto a github: ej.: "git remote add origin https://github.com/wmigue/curso-js.git"
 -subimos proyecto a determinada rama: "git push --set-upstream origin master" donde master es la rama o branch seleccionada.
+-eliminar enlace al repositorio remoto: git remote rm origin
+-ver repositorios remotos a los que apunta tu proyecto: git remote -v
+-cambiar la url del repositorio remoto asignado: git remote set-url origin <url del repositorio>
 -git clone "ruta": para clonar algun repositorio.
 -git reset --hard HEAD~3 : sirve para eliminar en este caso los ultimos 3 commits. luego con "git push --force" forzamos la actualizacion en github.
     Luego es necesario borrar el historial de github con: git push -f origin master.
@@ -34,6 +38,7 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
     git checkout xxx
     git merge master: trae los commits de "master".
     git pull: te queda tu rama xxx como copia exacta de master. (usar -f para forzar en caso de error.)
+-trae los cambios desde el repositorio remoto y hace merge de ellos: git pull
 -para clonar solo una RAMA(single-branch) y una CANTIDAD(depth) de commits a partir del ultimo generado:
     git clone -b master --single-branch https://github.com/wmigue/socket.io-express.js --depth 1
 -para moverse a un determinado commit: git checkout "hash" y para volver al head(ultimo commit): git switch - 
