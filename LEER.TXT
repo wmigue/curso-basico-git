@@ -47,3 +47,9 @@ primero, boton derecho sobre la carpeta del proyecto, "GIT bash here", para abri
 -git stash list : listando stashes.
 -git stash pop stash@{0} : aplica los cambio y elimina los archivos del stash.
 -git stash apply stash@{0} : aplica los cambios y deja una copia en el stash.
+:::::::::::::::
+para eliminar un directorio dentro de un repositorio determinado de github:
+git rm -r <directory_name>
+git commit -m "removed misc directory"
+git push origin master
+::::::::::::::
